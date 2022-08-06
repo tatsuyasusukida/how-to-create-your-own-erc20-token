@@ -1,0 +1,22 @@
+{
+  "name": "how-to-mint-erc20-token",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "hardhat run scripts/deploy.js",
+    "verify": "source .env && hardhat verify --contract contracts/SusukidaCoin.sol:SusukidaCoin $CONTRACT_ADDRESS"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.2",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.1.0",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "hardhat": "^2.10.1"
+  },
+  "description": ""
+}
